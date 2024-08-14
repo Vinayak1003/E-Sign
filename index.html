@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-signature</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Grey+Qo&family=Questrial&display=swap');
+        #reat-vibes-regular {
+            font-family: "Great Vibes", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen w-full bg-gradient-to-br from-sky-800 via-purple-600 to-cyan-400 px-4 py-8">
+        <h1 class="text-white text-center pt-6 sm:pt-10 text-2xl sm:text-3xl font-extrabold font-['Gilroy']">Get your <span id="reat-vibes-regular" class="text-3xl sm:text-4xl">E-sign</span> in a Sec.</h1>
+        
+        <div id="bar" class="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 bg-white rounded-lg mx-auto mt-6 sm:mt-8 p-4 flex flex-col sm:flex-row flex-wrap sm:flex-nowrap justify-between gap-4">
+            <div class="color">
+                <h2 class="text-sm">Text-Picker</h2>
+                <input id="colorpicker" type="color" class="h-6 w-full sm:w-auto mt-1 lg:w-full">
+            </div>
+            <div class="color">
+                <h2 class="text-sm">Background-Picker</h2>
+                <input id="Bgpicker" type="color" class="h-6 w-full sm:w-auto mt-1 lg:w-full">
+            </div>
+            <div class="font">
+                <h2 class="text-sm">Fonts</h2>
+                <select id="fontsize" class="border border-black rounded-full text-sm p-1 w-full sm:w-auto mt-1 lg:w-full">
+                    <option value="2px">2px</option>
+                    <option value="7px">7px</option>
+                </select>
+            </div>
+        </div>
+        
+        <canvas id="mycanvas" class="w-full sm:w-[500px] md:w-[600px] h-[250px] sm:h-[300px] md:h-[350px] bg-white mt-5 rounded mx-auto touch-action-none"></canvas>
+        
+        <div id="buttons" class="flex flex-col sm:flex-row justify-between w-full sm:w-[500px] mx-auto mt-4">
+            <button class="py-2 px-4 bg-red-600 rounded-lg text-white w-full sm:w-auto mb-2 sm:mb-0 hover:bg-red-700 transition-colors duration-300" id="Clear">Clear</button>
+            <button class="py-2 px-4 bg-green-600 rounded-lg text-white w-full sm:w-auto mb-2 sm:mb-0 hover:bg-green-700 transition-colors duration-300" id="Download">Download</button>
+            <button class="py-2 px-4 bg-yellow-500 rounded-lg text-white w-full sm:w-auto hover:bg-yellow-600 transition-colors duration-300" id="Retrieve">Retrieve</button>
+            <button id="animate" class="py-2 px-4 bg-purple-500 rounded-lg text-white w-full border-black sm:w-auto hover:bg-purple-700 transition-colors duration-300">Animate</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
